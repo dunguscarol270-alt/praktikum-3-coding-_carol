@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa Berprestasi</title>
+    <style>
+        body         
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        thead {
+            background-color: #ff99cc; /* Changed to a slightly different pink */
+        }
+        tfoot {
+            background-color: #ff69b4;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #ffe4e1;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #ffc0cb;
+        }
+        tbody tr:hover {
+            background-color: #ff1493;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Daftar Mahasiswa Berprestasi Universitas Bengkulu 2029</h1>
+    <!-- Tabel khusus untuk siswa berprestasi -->
+    <table border="1" cellspacing="0" cellpadding="8">
+        <caption>Daftar Mahasiswa Berprestasi Universitas Bengkulu 2029</caption>
+        <thead>
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col" colspan="2">Nama</th>
+                <th scope="col">Program Studi</th>
+                <th scope="col">IPK</th>
+                <th scope="col">Prestasi</th>
+                <th scope="col">Tahun</th>
+            </tr>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Nama Depan</th>
+                <th scope="col">Nama Belakang</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- mahasiswa pertama -->
+            <tr>
+                <th scope="row">1</th>
+                <td>Go</td>
+                <td>Eunhyuk</td>
+                <td>Pendidikan Bahasa Inggris</td>
+                <td rowspan="2">3.95</td>
+                <td>Juara 1 Lomba Debat Bahasa Inggris</td>
+                <td>2025</td>
+            </tr>
+            <!-- mahasiswa kedua (setelah swap posisi dengan yang ketiga) -->
+            <tr>
+                <th scope="row">2</th>
+                <td>So</td>
+                <td>Ae</td>
+                <td>Pendidikan Biologi</td>
+                <!-- IPK digabungkan dengan rowspan dari baris di atas -->
+                <td>Asisten Dosen Terbaik Bidang Biologi</td>
+                <td>2025</td>
+            </tr>
+            <!-- mahasiswa ketiga (setelah swap posisi dengan yang kedua) -->
+            <tr>
+                <th scope="row">3</th>
+                <td>Choi</td>
+                <td>Ung</td>
+                <td>Pendidikan Matematika</td>
+                <td>3.88</td>
+                <td>Juara 2 Olimpiade Matematika Nasional</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Baek</td>
+                <td>Dohwa</td>
+                <td>Pendidikan Fisika</td>
+                <td>3.62</td>
+                <td>Juara 1 Lomba Fisika Tingkat Provinsi</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Elaina</td>
+                <td></td>
+                <td>Pendidikan Kimia</td>
+                <td>3.50</td>
+                <td>Juara 3 Lomba Kimia Nasional</td>
+                <td>2025</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="7">Total Mahasiswa: 5</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
